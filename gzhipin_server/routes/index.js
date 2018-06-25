@@ -91,6 +91,8 @@ router.post('/update',function (req,res) {
 
 })
 
+//根据cokie获取对应user
+
 module.exports =router;
 
 

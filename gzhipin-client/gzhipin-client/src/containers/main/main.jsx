@@ -14,6 +14,18 @@ import LaobanInfo from '../laoban-info/laoban-info'
         //读取cookie中的userid
         //若么有，自动重定向到登陆界面
         //若有，
+    //检测用户一起是佛登陆过
+
+        const userid=Cookies.get("userid  ")
+        if (!userid){  //看用户是否登陆过，直接掉转到登录界面
+            return <Redirect to='/login'/>
+        }
+        //检查是否已登陆
+        
+
+
+
+
         return (
           <Switch>
               <Route path={'/dahseninfo' component={DashenInfo}}/>
